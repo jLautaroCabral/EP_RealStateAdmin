@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="935" pageHeight="650" orientation="Landscape" columnWidth="933" leftMargin="1" rightMargin="1" topMargin="1" bottomMargin="1" uuid="5fd2adc4-028a-4005-9431-aa56e5e28433">
+	<property name="ireport.zoom" value="1.4641000000000064"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="336"/>
+	<parameter name="locatarioNombre" class="java.lang.String"/>
+	<parameter name="montoEnLetras" class="java.lang.String"/>
+	<parameter name="tipoInmueble" class="java.lang.String"/>
+	<parameter name="mesEnLetras" class="java.lang.String"/>
+	<parameter name="direccionInmueble" class="java.lang.String"/>
+	<parameter name="locadorNombre" class="java.lang.String"/>
+	<parameter name="locadorDni" class="java.lang.String"/>
+	<parameter name="importe" class="java.lang.String"/>
+	<parameter name="importeAbonado" class="java.lang.String"/>
+	<parameter name="incluyeImpuestos" class="java.lang.String"/>
+	<parameter name="observaciones" class="java.lang.String"/>
+	<parameter name="barrioInmueble" class="java.lang.String"/>
+	<parameter name="fecha" class="java.lang.String"/>
+	<parameter name="hora" class="java.lang.String"/>
+	<parameter name="fechaFinalizacion" class="java.lang.String"/>
+	<parameter name="pisoDepto" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="7" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="82" splitType="Stretch">
+			<textField>
+				<reportElement x="264" y="49" width="69" height="20" uuid="b8d11c6a-e419-4108-bca1-4d87263a28ce"/>
+				<textFieldExpression><![CDATA[$P{hora}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="445" y="47" width="100" height="20" uuid="bf6a5346-0686-4937-8809-4a8ac0da3b9a"/>
+				<textFieldExpression><![CDATA[$P{fecha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="861" y="68" width="80" height="14" uuid="c229ed4c-d5d7-4199-8f83-340afbab832f"/>
+				<textFieldExpression><![CDATA[$P{fecha}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="508" splitType="Stretch">
+			<textField>
+				<reportElement x="47" y="-3" width="469" height="20" uuid="4074d219-d60a-4cd5-9056-d91b96d6b6cf"/>
+				<textFieldExpression><![CDATA[$P{locatarioNombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="7" y="15" width="588" height="20" uuid="a4a9044c-1269-41df-b6fa-cecb4cb0ee92"/>
+				<textFieldExpression><![CDATA[$P{montoEnLetras}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="33" width="184" height="20" uuid="92108c7d-d013-48a1-8367-173e2f05fe72"/>
+				<textFieldExpression><![CDATA[$P{tipoInmueble}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="404" y="29" width="137" height="20" uuid="9ce386a8-58b7-46cc-99b8-fd69a0487006"/>
+				<textFieldExpression><![CDATA[$P{mesEnLetras}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="173" y="47" width="231" height="20" uuid="50ece552-fd6a-46ae-b934-ce79d839d23e"/>
+				<textFieldExpression><![CDATA[$P{direccionInmueble}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="16" y="63" width="184" height="20" uuid="8fa99dfd-f451-4027-b2e2-f9ce35f0b669"/>
+				<textFieldExpression><![CDATA[$P{locadorNombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="358" y="60" width="184" height="20" uuid="71525622-3804-4483-9db0-dc86413cdf95"/>
+				<textFieldExpression><![CDATA[$P{locadorDni}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="225" y="97" width="285" height="20" uuid="bae33e7c-fffd-4394-87a1-e6961119e579"/>
+				<textFieldExpression><![CDATA[$P{importe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="492" y="124" width="100" height="20" uuid="a437340d-a690-4186-a589-3b846484ce7b"/>
+				<textFieldExpression><![CDATA[$P{importeAbonado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="724" y="35" width="164" height="16" uuid="2059e7bd-14ed-4e79-b016-bbf28df3ba00"/>
+				<textFieldExpression><![CDATA[$P{locadorNombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="733" y="68" width="164" height="15" uuid="80d028f1-2839-425a-a38d-97abfe55c2d8"/>
+				<textFieldExpression><![CDATA[$P{tipoInmueble}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="726" y="83" width="164" height="14" uuid="1cc44c30-0dd2-4f75-802f-9c84c6d580a3"/>
+				<textFieldExpression><![CDATA[$P{direccionInmueble}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="724" y="100" width="164" height="14" uuid="6b9eba4b-4ca0-47d9-91e3-190c9addf9e4"/>
+				<textFieldExpression><![CDATA[$P{barrioInmueble}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="885" y="8" width="51" height="14" uuid="41a45cfc-3eb2-4faf-abe6-c877ac044829"/>
+				<textFieldExpression><![CDATA[$P{hora}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="741" y="120" width="97" height="14" uuid="f69cfdcc-ca7b-47f6-8ddf-4e348e7c6a69"/>
+				<textElement>
+					<font size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mesEnLetras}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="890" y="124" width="55" height="14" uuid="f9a3dee0-0235-4c1c-aef3-c897824ab154"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{incluyeImpuestos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="678" y="149" width="222" height="14" uuid="83098bd9-d42f-48f6-a26c-50af72e8733c"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{montoEnLetras}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="724" y="52" width="164" height="14" uuid="419633ab-3a06-43f7-9645-61f1283ab028"/>
+				<textFieldExpression><![CDATA[$P{locatarioNombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="4" y="129" width="428" height="38" uuid="3a499b01-213f-4bd6-a0c4-bd74733b13dc"/>
+				<textFieldExpression><![CDATA[$P{observaciones}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="678" y="171" width="238" height="39" uuid="fb34c981-0334-438e-a3f4-516eb6139605"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{observaciones}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="894" y="340" width="51" height="14" uuid="1eaa232f-2882-4afa-a5e4-271555b6f88a"/>
+				<textFieldExpression><![CDATA[$P{hora}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="23" y="396" width="184" height="20" uuid="d09b889c-639f-4cb9-8215-7d8eed9c5540"/>
+				<textFieldExpression><![CDATA[$P{locadorNombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="737" y="448" width="97" height="14" uuid="78a55b54-d132-4046-9754-7baf4fdef497"/>
+				<textElement>
+					<font size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mesEnLetras}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="497" y="454" width="100" height="20" uuid="d8fc39b9-062b-4194-8d08-fddf6300bb3f"/>
+				<textFieldExpression><![CDATA[$P{importeAbonado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="4" y="452" width="428" height="38" uuid="fe5ad3b0-74ce-4395-9566-079eee88853b"/>
+				<textFieldExpression><![CDATA[$P{observaciones}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="680" y="476" width="222" height="14" uuid="f1dceb33-7cc8-4a3a-aa41-f8a9ddba4be9"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{montoEnLetras}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="57" y="323" width="469" height="20" uuid="544475e3-2acf-478d-b8cc-f952e838ecc8"/>
+				<textFieldExpression><![CDATA[$P{locatarioNombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="235" y="429" width="285" height="20" uuid="93297c08-5647-40c7-bd04-d1b1dce779c1"/>
+				<textFieldExpression><![CDATA[$P{importe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="734" y="382" width="164" height="14" uuid="8a804397-9104-4ea1-9554-b0398c7317e8"/>
+				<textFieldExpression><![CDATA[$P{locatarioNombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="23" y="341" width="588" height="20" uuid="d50ce4aa-b6dc-4ecd-8254-879303396f3a"/>
+				<textFieldExpression><![CDATA[$P{montoEnLetras}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="750" y="398" width="164" height="15" uuid="b3c58b8a-15e0-43a7-bc4d-6fa989e4360d"/>
+				<textFieldExpression><![CDATA[$P{tipoInmueble}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="734" y="414" width="164" height="14" uuid="508d19d8-5dcd-4fb8-8883-a0112c4bfb37"/>
+				<textFieldExpression><![CDATA[$P{direccionInmueble}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="88" y="359" width="184" height="20" uuid="5cc8c87b-8ff1-430f-b112-e7210c1ceb1e"/>
+				<textFieldExpression><![CDATA[$P{tipoInmueble}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="183" y="374" width="231" height="20" uuid="fdec62bd-c39c-473f-b6ed-481cd6364334"/>
+				<textFieldExpression><![CDATA[$P{direccionInmueble}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="899" y="453" width="55" height="14" uuid="4b3245a1-b3a6-4bb6-88f2-561a6f188e44"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{incluyeImpuestos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="358" width="137" height="20" uuid="588fe15f-4cbd-4451-adab-f437566c427b"/>
+				<textFieldExpression><![CDATA[$P{mesEnLetras}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="734" y="365" width="164" height="16" uuid="24ff22db-5035-4ed7-a2b8-38cf77c10c57"/>
+				<textFieldExpression><![CDATA[$P{locadorNombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="734" y="431" width="164" height="14" uuid="cdf4f742-1b59-4c68-ae36-bfdaf84329a0"/>
+				<textFieldExpression><![CDATA[$P{barrioInmueble}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="368" y="395" width="184" height="20" uuid="8576e93e-fa6c-4a50-99af-1b581beb21ba"/>
+				<textFieldExpression><![CDATA[$P{locadorDni}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="449" y="293" width="100" height="20" uuid="d615a135-4387-49fc-89b6-2f10041c2740"/>
+				<textFieldExpression><![CDATA[$P{fecha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="265" y="296" width="69" height="20" uuid="39fc2d2c-5507-4247-bb9d-baebc71109bf"/>
+				<textFieldExpression><![CDATA[$P{hora}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="859" y="320" width="80" height="17" uuid="72c4f752-a144-4f8c-b8f8-34dc99cafa68"/>
+				<textFieldExpression><![CDATA[$P{fecha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="404" y="45" width="137" height="20" uuid="36701a6c-143b-4779-a4e9-c4396558bad9"/>
+				<textFieldExpression><![CDATA[$P{pisoDepto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="413" y="374" width="137" height="20" uuid="405de53b-0277-48ae-abcc-df4cc98d3897"/>
+				<textFieldExpression><![CDATA[$P{pisoDepto}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
